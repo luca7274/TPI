@@ -2,6 +2,7 @@
 CREATE DATABASE DB_magasin;
 GO
 
+-- Utilisation de la base
 USE DB_magasin;
 GO
 
@@ -17,6 +18,7 @@ CREATE TABLE t_client (
     cliGender CHAR(1) NOT NULL,
     CONSTRAINT PK_t_client PRIMARY KEY (id_client)
 );
+
 
 CREATE TABLE t_brand (
     id_brand INT IDENTITY(1,1) NOT NULL,
