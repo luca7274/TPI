@@ -4,7 +4,7 @@ CREATE PROCEDURE GetSalary
     @salDate DATE = NULL
 AS
 BEGIN
-    -- les table t_salary et t_employee sont respectivement abgreger en s et e
+    -- les table t_salary et t_employee sont respectivement abréger en s et e
     SELECT 
         s.id_salary,
         s.salDate,
@@ -15,7 +15,7 @@ BEGIN
         e.empLastName
     FROM 
         t_salary s
-    -- relie les tables deux table grace à l'id_employee
+    -- relier les deux tables grace à l'id_employee
     INNER JOIN 
         t_employee e ON s.id_employee = e.id_employee
     WHERE 
